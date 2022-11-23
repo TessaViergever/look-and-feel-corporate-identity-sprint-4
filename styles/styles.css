@@ -1,0 +1,223 @@
+/* BODY STYLING */
+body{
+width: 100%;
+padding:1rem 2rem 0 2rem;
+/*background-color: rgba(35, 178, 47, 0.5);*/
+color: rgb(49, 39, 113);
+}
+
+
+/* HEADER STYLING */
+header {
+  display: grid;
+  grid-template-columns: 2fr ;
+  grid-template-rows: 1fr ;
+  grid-template-areas:
+  "logo-buurtcampus-plantswap main-navigatie-menu" 
+}
+
+header>img{
+  max-width: 100%;
+  height: auto;
+  place-self: left;
+  padding-left:5rem;
+  grid-area: logo-buurtcampus-plantswap;
+}
+
+.header-nav{
+  display: inline;
+  place-self: right;
+  list-style-type: none;
+  grid-area: main-navigatie-menu;
+}
+
+/* MAIN STYLING */
+main {
+background-color: rgba(35, 178, 47, 0.5);
+border:rgba(35, 178, 47, 0.5);
+}
+
+.main-header{
+background-color: rgb(255, 255, 255); 
+background-color: rgba(35, 178, 47, 0.214);
+text-align: center;
+padding: 10px;
+}
+
+
+h1{
+  color: rgb(49, 39, 113);
+  text-align: center;
+ }
+
+ 
+
+
+/* CAROUSEL "TIPS BUURTBEWONERS" STYLING */ 
+.box-buurtbewoners {
+  padding: 10px;
+}
+
+h2{
+  text-align: center;
+  background-color: rgb(255, 255, 255); 
+  }
+
+.carousel-tips-buurtbewoners {
+  background-color:rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  overflow: scroll;
+  }
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-inline-start: 0;  
+  width: 60rem; 
+}
+
+.slides-item {/* checken: welke info in .slides-item of .slides */
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "tip-foto-buurtbewoner";
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 1rem;   
+  padding: 15px;
+  text-align: left;
+}
+
+.slides-item p, .slides-item img{
+  grid-area: tip-foto-buurtbewoner;
+}
+
+.slides-item p{
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  place-self: start center;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.slides-item img{
+  border-radius: 10px;
+  max-width: 100%;
+  background-color: rgba(35, 178, 47, 0.214);
+}
+
+
+
+/* "KOM LANGS BIJ OBA" STYLING */ 
+.box-kom-langs-bij-oba {
+  padding: 10px;
+  text-align: center;
+}
+
+.box-kom-langs-bij-oba h2{
+text-decoration: underline;
+}
+
+
+/* "VIND JOUW PLANT" STYLING */ 
+ .box-vind-jouw-plant {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   /* align-items: center; */
+    padding: 10px;
+    background-color:rgba(35, 178, 47, 0.5);
+    text-align: center;
+    place-items:
+  }
+
+ .box-vind-jouw-plant button {
+  border-radius: 10px;
+  color: rgb(49, 39, 113);
+  background-color:rgb(255, 255, 255, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-style: none;
+  padding: 5px 10px;
+  text-align: center;
+  transition-duration: 0.4s;
+ }
+
+.box-vind-jouw-plant button:hover {
+  background-color: rgb(49, 39, 113); 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+
+
+/* FOOTER STYLING*/
+footer img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  background-color: rgb(255, 255, 255); 
+}
+
+
+
+/* MEDIA QUERIES BREAKPOINTS CAROUSEL */
+
+@media screen and (min-width: 375px) {
+  .carousel-tips-buurtbewoners {
+    background-color: rgb(49, 39, 113, 0.8) /*tijdelijke kleur als voorbeeld*/
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .carousel-tips-buurtbewoners {
+    background-color: rgb(49, 39, 113, 0.6);/*tijdelijke kleur als voorbeeld*/
+  }
+}
+
+/* MEDIA QUERIES BREAKPOINTS BUTTONS */
+
+@media screen and (min-width: 400px) {
+  .box-vind-jouw-plant button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:6rem;
+    margin-left:6rem;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .box-vind-jouw-plant button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right:6rem;
+    margin-left:6rem;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .box-vind-jouw-plant button {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    margin-right:6rem;
+    margin-left:6rem;
+    max-width: 200px;
+  }
+}
+
+
+
+
