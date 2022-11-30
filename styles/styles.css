@@ -1,3 +1,21 @@
+* h1, h2, p {
+  text-align: center;
+}
+
+/* Custom properties: uitzoeken hoe het werkt en ik het kan implementeren (deeltaak)
+- kleur thema (dark modus)
+- h1/h2 etc styling
+- box shadow?
+
+:root {
+  --color: rgb(49, 39, 113);
+}
+
+body {
+  color: var(--main-color);
+}*/
+
+
 /* ================ STYLING BODY ================ */
 body{
 padding:1rem 2rem 0 2rem;
@@ -21,7 +39,7 @@ header a img{
 .main-navigation-menu ul {
   display: flex;
   justify-content:space-between;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .main-navigation-menu li {
@@ -38,8 +56,6 @@ header a img{
  a:hover{}
  a:active{} 
 } */
-
-
 
 
 /* ================ STYLING MAIN  ================*/
@@ -174,14 +190,80 @@ padding: 0.5rem 1.5rem;
 
 
 
-/* FOOTER STYLING*/
-/*footer img {
+/* ================ FOOTER STYLING ================*/
+
+
+footer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   height: auto;
-  align-self: center;
-  background-color: rgb(255, 255, 255); 
+  width: 1200px;
 } 
--> dit gaat eruit? */
+
+.footer-middle {
+  background-color:rgb(49, 39, 113);
+  color: white;
+  padding: 25px 25px 25px 25px;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  display: flex;
+}
+
+
+.footer-bottom {
+ display: flex; 
+ justify-content: center;
+ padding: 25px 25px 25px 25px;
+ 
+}
+
+/* voor mobiel deze onder socials footer-bottom*/
+.newsletter-form {
+  max-width:fit-content;
+  overflow:hidden;
+}
+
+.newsletter-form h2 {
+  text-align: left;
+}
+
+@media screen and (max-width: 300px) {
+  .footer-middle {
+    display: flex;
+    flex-direction:column;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .footer-middle {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .newsletter-form {
+    padding-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 876px) {
+  .newsletter-form {
+    padding-left: 20rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .footer-top img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
 
 
 /* ============ MEDIA QUERIES ================*/
