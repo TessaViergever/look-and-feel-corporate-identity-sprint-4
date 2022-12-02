@@ -1,17 +1,27 @@
-> _Fork_ deze leertaak en ga aan de slag. 
-Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Plantswap | Informatie over plantenverzorging (Buurtcampus Oost)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+
+## Inhoudsopgave
+
+  * [Beschrijving](#beschrijving)
+  * [Kenmerken](#kenmerken)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
+Op deze pagina kunnen bezoekers (bewoners van Amsterdam Oost) informatie vinden over het verzorgen van hun planten. Er zijn verschillende manieren om aan informatie te komen. Zo kunnen zij zoeken in de "plantenlijst A t/m Z" of gebruik maken van de zoekfuctie "zoek op naam". Om verbinding binnen de buurt te creëren zijn er tips van buurtbewoners te vinden. Tot slot krijgt de bezoeker informatie over de extra mogelijkheden die de ObA op locatie aanbiedt. Op basis van die informatie kunnen buurtbewoners ervoor kiezen om naar de ObA te komen en daar hun kennis over plantenverzorging extra verdieping te geven. 
 <!-- Voeg een link toe naar Github Pages 🌐-->
+<img width="350" alt="plantswap mobile version sprint 4" src="https://user-images.githubusercontent.com/112861180/205278220-f3b365b5-9328-41b1-b496-5643c0aaf525.png">
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Dit project is gemaakt met HTML en CSS. Ook is er gebruik gemaakt van verschillende tools (VSC, Figma, Github, schrijfwaren en papier).
+
+* HTML - gebruikt voor de structuur van de pagina
+* CSS - vormgeven van de HTML (bijv. media queries voor responsiveness)
+* VSC - texteditor waarin de HTML en CSS geschreven is
+* Github - om lokaal te kunnen werken aan de code in VSC. En om een live versie en backup op een externe server te hebben. 
+* Schrijfwaren & papier - voor het maken van ontwerpschetsen 
+
 
 ## Bronnen
 
